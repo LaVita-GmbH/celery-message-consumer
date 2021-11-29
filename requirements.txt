@@ -1,5 +1,4 @@
 -r requirements-base.txt
 
 celery
-amqp
 kombu

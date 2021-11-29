@@ -167,7 +167,6 @@ class AMQPRetryConsumerStep(bootsteps.StartStopStep):
 
     def start(self, c):
         channel = c.connection.channel()
-        channel.confirm_select()
         self.handlers = self.get_handlers(channel)
 
         for handler in self.handlers:
